@@ -9,6 +9,6 @@ int solution(int hp) {
     hp%=5;
     count+=hp/3;
     hp%=3;
-    count+=hp/1;
+    count+=hp;
     return count;
 }
