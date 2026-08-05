@@ -6,17 +6,16 @@ using namespace std;
 long long solution(string numbers) {
     long long answer = 0;
     string tmp="";
-    string str_answer="";
     string num_words[10]={"zero","one","two","three","four","five","six","seven","eight","nine"};
     for(char c : numbers){
         tmp+=c;
         for(int i = 0;i<10;i++){
             if(tmp==num_words[i]) {
-                str_answer+=i+'0';
+                answer=(answer*10)+i;
                 tmp="";
+                break;
             }
         }
     }
-    answer=stoll(str_answer);
     return answer;
 }
