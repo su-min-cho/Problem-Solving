@@ -11,6 +11,5 @@ vector<int> solution(int n) {
             answer.push_back(i);
         }
     }
-    sort(answer.begin(),answer.end());
     return answer;
 }
